@@ -10,9 +10,9 @@ npm install
 npm run serve
 ```
 see the demo at  
-http://localhost:8888/project/  
+http://localhost:8888/index.html  
 and  
-http://localhost:8888/project/about.html  
+http://localhost:8888/about.html  
 
 ### Compiles and minifies for production
 ```
