@@ -6,11 +6,11 @@
  */
 import Vue from 'vue'
 import router from '../../route/index/'
-//import ElementUI from 'element-ui'
+import ElementUI from 'element-ui'
 import IndexPage from './IndexPage'
-// import locale from 'element-ui/lib/locale/lang/en'
-// import 'element-ui/lib/theme-chalk/index.css'
-// Vue.use(ElementUI, { locale })
+import locale from 'element-ui/lib/locale/lang/en'
+import 'element-ui/lib/theme-chalk/index.css'
+Vue.use(ElementUI, { locale })
 Vue.use(require('vue-wechat-title'))
 new Vue({
 	router,

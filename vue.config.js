@@ -72,7 +72,7 @@ module.exports = {
 
   // 那么将这个值改为 '/my-app/'
 
-  publicPath: "/project", // 构建好的文件输出到哪里
+  publicPath: "/", // 构建好的文件输出到哪里
 
   outputDir: "dist", // where to put static assets (js/css/img/font/...) // 是否在保存时使用‘eslint-loader’进行检查 // 有效值: true | false | 'error' // 当设置为‘error’时，检查出的错误会触发编译失败
 
@@ -117,6 +117,10 @@ module.exports = {
   },
 
   configureWebpack: () => {}, // CSS 相关选项
+  // configureWebpack: (config) => {
+  //   config.module.rules.push({ test: /\.(woff|woff2|svg|eot|ttf)\??.*$/,
+  //       loader: 'file-loader?name=./assets/fonts/[name].[ext]' })
+  // },
 
   css: {
     // 是否将组件中的 CSS 提取至一个独立的 CSS 文件中,当作为一个库构建时，你也可以将其设置为 false 免得用户自己导入 CSS
@@ -130,7 +134,7 @@ module.exports = {
         less: {}
     },
     // 当为true时，css文件名可省略 module 默认为 false
-    modules: true,
+    modules: false,
   },
 
   parallel: require("os").cpus().length > 1, // PWA 插件相关配置 // see https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-pwa
