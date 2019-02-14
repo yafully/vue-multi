@@ -14,7 +14,7 @@ function resolve (dir) {
 /** 获取多页的入口脚本和模板 */
 const getPages = (() => {
   const [globPathHtml, globPathJs, pages, tempSet] = [
-    ['./public/views/**/*.html', 'template'], // 入口模板正则
+    ['./src/views/**/*.html', 'template'], // 入口模板正则
     ['./src/views/**/app.js', 'entry'], // 入口脚本正则
     Object.create(null),
     new Set()
@@ -133,8 +133,8 @@ module.exports = {
         css: {},
         less: {}
     },
-    // 当为true时，css文件名可省略 module 默认为 false
-    modules: false,
+    // 当为true时(会引起element-ui因为font无法编译)，css文件名可省略 module 默认为 false
+    modules: false
   },
 
   parallel: require("os").cpus().length > 1, // PWA 插件相关配置 // see https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-pwa

@@ -11,7 +11,7 @@ import routes from './config'
 Vue.use(VueRouter)
 
 const routerIndex = new VueRouter({
-	mode: 'hash',  //  指定以传统方式访问‘hash’可选   
+	//mode: 'history',  //  指定以传统方式访问‘hash’‘history’可选   
     routes
 })
 
