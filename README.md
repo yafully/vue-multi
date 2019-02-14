@@ -4,7 +4,6 @@
       |---dist 
       |---public 公共文件
         |---mock 模拟数据
-        |---views 页面模板
       |---src
         |---assets 资源
         |---common 公共模块目录
@@ -14,10 +13,12 @@
             |---pages 组件
             |---app.js
             |---IndexPage.vue
+            |---index.html 页面模板
           |---about       about模块
             |---pages 组件
             |---app.js
             |---AboutPage.vue
+            |---index.html 页面模板
           |---error       error404模块
             |---index.vue
 ```
