@@ -1,5 +1,26 @@
 # vue-multi
-
+```
+    webpack
+      |---dist 
+      |---public 公共文件
+        |---mock 模拟数据
+        |---views 页面模板
+      |---src
+        |---assets 资源
+        |---common 公共模块目录
+        |---components组件
+        |---views各个模块
+          |---index    index模块
+            |---pages 组件
+            |---app.js
+            |---IndexPage.vue
+          |---about       about模块
+            |---pages 组件
+            |---app.js
+            |---AboutPage.vue
+          |---error       error404模块
+            |---index.vue
+```
 ## Project setup
 ```
 npm install
@@ -9,7 +30,11 @@ npm install
 ```
 npm run serve
 ```
-see the demo at http://localhost:8888/project/ and http://localhost:8888/project/about.html
+see the demo at  
+http://localhost:8888/index.html  
+and  
+http://localhost:8888/about.html  
+
 ### Compiles and minifies for production
 ```
 npm run build
